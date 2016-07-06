@@ -1,4 +1,4 @@
-<main class="container" role="main">
+<h1>{{heading}}</h1>
 <h2>Money for racing: <input type="text" class="cash" [(ngModel)]="cash"></h2>
 <h2>Cash left to enter races: <span>{{cashLeft() | currency:'USD':true}}</span> </h2>
 <ul>
@@ -33,4 +33,3 @@
   <h3>Total cost:</h3>
   <p>{{totalCost() | currency:'USD':true}}</p>
 </div>
-</main>
