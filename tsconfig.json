@@ -9,5 +9,9 @@
     "removeComments": false,
     "noImplicitAny": false,
     "outDir": "./dist/app"
-  }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
