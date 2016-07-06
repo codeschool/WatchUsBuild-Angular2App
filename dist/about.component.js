@@ -9,23 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var races_component_1 = require('./races.component');
-var race_service_1 = require('./race.service');
-var http_1 = require('@angular/http');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.heading = "Ultra Racing Schedule";
+var AboutComponent = (function () {
+    function AboutComponent() {
     }
-    AppComponent = __decorate([
+    AboutComponent = __decorate([
         core_1.Component({
-            selector: 'racing-app',
-            template: "\n<header class=\"container\">\n  <h1>{{heading}}</h1>\n</header>\n<my-races></my-races>\n",
-            directives: [races_component_1.RacesComponent],
-            providers: [race_service_1.RaceService, http_1.HTTP_PROVIDERS]
+            selector: 'about',
+            template: "\n<header class=\"container\">\n  <h1>Something about races</h1>\n  \n  <p>Races are usually pretty awesome, schedule to race today!</p>\n</header>\n"
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], AboutComponent);
+    return AboutComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.AboutComponent = AboutComponent;
+//# sourceMappingURL=about.component.js.map
