@@ -11,28 +11,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var scoreboardItem_component_1 = require('./scoreboardItem.component');
 var race_service_1 = require('./race.service');
-var ScoreboardComponent = (function () {
-    function ScoreboardComponent(raceService) {
+var ScoreDisplayComponent = (function () {
+    function ScoreDisplayComponent(raceService) {
         this.raceService = raceService;
-        this.notifications = [];
     }
-    ScoreboardComponent.prototype.ngOnInit = function () {
+    ScoreDisplayComponent.prototype.ngOnInit = function () {
         var _this = this;
         this.raceService.getRaces()
             .subscribe(function (data) {
             _this.races = data;
         });
     };
-    ScoreboardComponent = __decorate([
+    ScoreDisplayComponent = __decorate([
         core_1.Component({
             selector: 'scoreboard',
-            template: "\n  <header class=\"container\">\n    <h1>Scoreboard</h1>\n    <h3>Race Notifications</h3>\n    <ul>\n      <li *ngFor=\"let notification of notifications\">{{notification}}</li>\n    </ul>\n  </header>\n  \n  <div class=\"container-fluid scoreboard-display\">\n    <div class=\"row\">\n      <div class=\"col-xs-4\" *ngFor=\"let race of races\">\n        <scoreboard-item [race]=\"race\" (notification)=\"notifications.unshift($event)\"></scoreboard-item>\n      </div>\n    </div>\n  </div>\n  ",
-            directives: [scoreboardItem_component_1.ScoreboardItemComponent],
-            styles: ["\n    ul {\n      height: 200px;\n      overflow: auto;\n    }\n  "]
+            template: "\n  <header class=\"container\">\n    <h1>Scoreboard</h1>\n    <ul>\n      <li *ngFor=\"let notification of notifications\">notification</li>\n    </ul>\n  </header>\n  \n  <div class=\"container-fluid scoreboard-display\">\n    <div class=\"row\">\n      <div class=\"col-xs-4\" *ngFor=\"let race of races\">\n        <scoreboard-item [race]=\"race\"></scoreboard-item>\n      </div>\n    </div>\n  </div>\n  ",
+            directives: [scoreboardItem_component_1.ScoreboardItemComponent]
         }), 
         __metadata('design:paramtypes', [race_service_1.RaceService])
-    ], ScoreboardComponent);
-    return ScoreboardComponent;
+    ], ScoreDisplayComponent);
+    return ScoreDisplayComponent;
 }());
-exports.ScoreboardComponent = ScoreboardComponent;
-//# sourceMappingURL=scoreboard.component.js.map
+exports.ScoreDisplayComponent = ScoreDisplayComponent;
+//# sourceMappingURL=scoreDisplay.component.js.map

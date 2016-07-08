@@ -18,7 +18,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'racing-app',
-            template: " \n<nav class=\"navbar navbar-default\">\n  <div class=\"container-fluid\">\n    <div class=\"navbar-header\">\n      <ul class=\"nav navbar-nav navbar-right\">\n        <li><a [routerLink]=\"['']\">About</a></li>\n        <li><a [routerLink]=\"['/schedule']\">Schedule</a></li>\n        <li><a [routerLink]=\"['/scoreboard']\">Scoreboard</a></li>\n      </ul>\n    </div>\n  </div>\n</nav>\n<main class=\"container\" role=\"main\">\n  <router-outlet></router-outlet>\n<main>\n",
+            template: " \n<nav class=\"navbar navbar-default\">\n  <div class=\"container-fluid\">\n    <div class=\"navbar-header\">\n      <ul class=\"nav navbar-nav navbar-right\">\n        <li><a [routerLink]=\"['']\">About</a></li>\n        <li><a [routerLink]=\"['/schedule']\">Schedule</a></li>\n        <li><a [routerLink]=\"['/scoreboard']\">Scoreboard</a></li>\n      </ul>\n    </div>\n  </div>\n</nav>\n<main role=\"main\">\n  <router-outlet></router-outlet>\n<main>\n",
             directives: [router_1.ROUTER_DIRECTIVES],
             providers: [race_service_1.RaceService, http_1.HTTP_PROVIDERS]
         }), 
