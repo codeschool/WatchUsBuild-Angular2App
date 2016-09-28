@@ -1,5 +1,4 @@
 import { Component } from '@angular/core'
-import { ScoreboardItemComponent } from './scoreboardItem.component'
 import { RaceService } from './race.service'
 import { Race } from './race'
 
@@ -22,7 +21,6 @@ import { Race } from './race'
     </div>
   </div>
   `,
-  directives: [ScoreboardItemComponent],
   styles: [`
     ul {
       height: 200px;

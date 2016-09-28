@@ -16,7 +16,6 @@ import { RaceScore } from './raceScore'
   </ol>
 </div>
   `,
-  providers: [RaceScoreService],
   styles: [`
     .scoreboard-item {
       border: 1px solid red;
