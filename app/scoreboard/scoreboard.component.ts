@@ -1,6 +1,6 @@
 import { Component } from '@angular/core'
-import { RaceService } from './race.service'
-import { Race } from './race'
+import { RaceService } from '../race.service'
+import { Race } from '../race'
 
 @Component({
   selector: 'scoreboard',

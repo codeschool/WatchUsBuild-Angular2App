@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core'
-import { Race } from './race'
+import { Race } from '../race'
 import { RaceScoreService } from './raceScore.service'
 import { RaceScore } from './raceScore'
 

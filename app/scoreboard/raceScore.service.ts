@@ -88,14 +88,14 @@ export class RaceScoreService {
   }
 
   getScores() {
-    return this.http.get('app/raceScores.json')
+    return this.http.get('app/scoreboard/raceScores.json')
           .map(response => response.json() as RaceScore[])
   }
   
   getScoreForRace(raceId) {
     let newScore = new Subject<RaceScore>()
 
-    this.http.get('app/raceScores.json')
+    this.http.get('app/scoreboard/raceScores.json')
       .map(response =>{
         let scores = response.json()
         let foundScore = scores.find((i)=> i.raceId === raceId)
