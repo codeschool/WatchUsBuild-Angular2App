@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Race } from '../race';
-import { RaceService } from '../race.service';
+import { Race } from '../shared/race';
+import { RaceService } from '../shared/race.service';
 
 @Component({
   selector: 'my-races',

@@ -1,15 +1,10 @@
 import { NgModule } from '@angular/core';
-import { HttpModule } from '@angular/http';
-import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
-
+import { SharedModule } from '../shared/shared.module';
 import { RacesComponent } from './races.component';
 
 @NgModule({
   imports: [
-    HttpModule,
-    FormsModule,
-    CommonModule
+    SharedModule
   ],
   declarations: [
     RacesComponent
