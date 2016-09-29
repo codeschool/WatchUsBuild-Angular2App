@@ -1,5 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core'
-import { Race } from './race'
+import { Race } from '../shared/race'
 import { RaceScoreService } from './raceScore.service'
 import { RaceScore } from './raceScore'
 
@@ -16,7 +16,6 @@ import { RaceScore } from './raceScore'
   </ol>
 </div>
   `,
-  providers: [RaceScoreService],
   styles: [`
     .scoreboard-item {
       border: 1px solid red;

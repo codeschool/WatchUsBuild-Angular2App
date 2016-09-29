@@ -1,7 +1,4 @@
-import { Component } from '@angular/core'
-import { RaceService } from './race.service'
-import { HTTP_PROVIDERS } from '@angular/http'
-import { ROUTER_DIRECTIVES } from '@angular/router'
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'racing-app',
@@ -21,8 +18,6 @@ import { ROUTER_DIRECTIVES } from '@angular/router'
   <router-outlet></router-outlet>
 <main>
 `,
-  directives: [ROUTER_DIRECTIVES],
-  providers: [RaceService, HTTP_PROVIDERS]
 })
 export class AppComponent {
 

@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { Race } from './race';
-import { RaceService } from './race.service';
+import { Race } from '../shared/race';
+import { RaceService } from '../shared/race.service';
 
 @Component({
   selector: 'my-races',
-  templateUrl: 'app/races.component.html',
-  styleUrls:['app/races.component.css']
+  templateUrl: 'app/races/races.component.html',
+  styleUrls:['app/races/races.component.css']
 })
 export class RacesComponent {
   heading = "Ultra Racing Schedule"
