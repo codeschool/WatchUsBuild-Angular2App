@@ -38,7 +38,7 @@ export class RacesComponent {
   }
 
   enterRace(race) {
-    if (this.cashLeft() > race.entryFee) {
+    if (this.cashLeft() >= race.entryFee) {
       race.isRacing = true;
     } else {
       alert("You don't have enough cash");
